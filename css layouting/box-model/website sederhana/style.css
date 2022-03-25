@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
+body {
+  font: 17px/27px arial, sans-serif;
+  background-color: rgb(221, 221, 221);
+  background-image: url("img/email-pattern.png");
+}
+.topbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: rgb(0, 183, 255);
+  position: fixed;
+  z-index: 999;
+  border-bottom: 2px solid rgb(38, 0, 255);
+  text-align: center;
+  line-height: 70px;
+  color: white;
+}
+.container {
+  width: 999px;
+  margin: 80px auto;
+  background-color: white;
+  position: relative;
+}
+.logo .twitter {
+  background-image: url("img/a77fcf65d98a9da80c38a82a266a8cc0.png");
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: -14px;
+  right: -18px;
+}
+.header {
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+.header .title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.header ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.header a {
+  text-decoration: none;
+  color: rgb(255, 136, 0);
+}
+.header a:hover {
+  color: rgb(0, 195, 255);
+}
+.homeImg {
+  height: 450px;
+  background-image: url("img/IMG-20211031-WA0008\ -\ Copy.jpg");
+  background-size: cover;
+  border-top: 2px solid rgb(72, 255, 0);
+  border-bottom: 2px solid rgb(255, 0, 76);
+}
+
+.content {
+  padding: 20px;
+  width: 930px;
+  box-sizing: border-box;
+}
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.content .main h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.content .main .writter {
+  margin-top: -7px;
+  font-size: 15px;
+}
+.content .main .writter a {
+  color: rgb(255, 136, 0);
+  text-decoration: none;
+}
+.content .main .writter a:hover {
+  color: rgb(0, 195, 255);
+}
+
+.copyright {
+  background-color: rgb(175, 174, 174);
+  padding: 10px;
+}
+.copyright .copy {
+  color: white;
+  text-align: center;
+}
+
+.aboutWritter {
+  float: right;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.aboutWritter h3 {
+  font-weight: bold;
+  color: grey;
+}
+.aboutWritter img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  padding: 10px;
+}
+
+.aboutWritter p {
+  font: 13px/18px arial;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}

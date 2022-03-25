@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- colspan -->
+    <table border="2" cellspacing="5" cellpadding="10">
+      <tr>
+        <td rowspan="3">rowspan</td>
+        <td colspan="2">colspan</td>
+      </tr>
+      <tr>
+        <td>baris 2, kolom 2</td>
+        <td>baris 2, kolom 3</td>
+      </tr>
+      <tr>
+        <td>baris 3, kolom 2</td>
+        <td>baris 3, kolom 3</td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <!-- rowspan -->
+    <table border="2" cellspacing="5" cellpadding="10">
+      <tr>
+        <td>baris 1, kolom 1</td>
+        <td>baris 1, kolom 2</td>
+        <td>baris 1, kolom 3</td>
+        <td>baris 1, kolom 4</td>
+      </tr>
+      <tr>
+        <td>baris 2, kolom 1</td>
+        <td rowspan="2" colspan="2" style="text-align: center">center</td>
+        <td>baris 2, kolom 4</td>
+      </tr>
+      <tr>
+        <td>baris 3, kolom 1</td>
+        <td>baris 3, kolom 4</td>
+      </tr>
+      <tr>
+        <td>baris 3, kolom 1</td>
+        <td>baris 3, kolom 2</td>
+        <td>baris 3, kolom 3</td>
+        <td>baris 3, kolom 4</td>
+      </tr>
+    </table>
+  </body>
+</html>

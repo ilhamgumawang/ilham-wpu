@@ -1,0 +1,37 @@
+
+ .img{
+     width: 500px;
+     border: 2px solid black;
+     padding: 5px;
+     margin: auto;
+     margin-bottom: 30px;
+     /* overflow: auto; */
+ }
+ img{
+     float: right;
+     margin: 5px;
+ }
+ .clear{
+     clear: right;
+ }
+
+ .container{
+     width: 900px;
+     border: 2px solid black;
+     padding: 5px;
+     margin: auto;
+ }
+.box{
+     width: 200px;
+     height: 200px;
+     margin: 10px;
+     background-color: rgb(0, 247, 255);
+     display: inline;
+     text-align: center;
+     line-height: 200px;
+     float: left;
+     
+ }
+ .clear2{
+     clear: left;
+ }

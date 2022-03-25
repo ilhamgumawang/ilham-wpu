@@ -1,0 +1,197 @@
+/* fonts */
+@font-face {
+  font-family: "exfont";
+  src: url("../fonts/exfont-webfont.woff") format("woff"), url("../fonts/exfont-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font: 16px/32px "exfont", arial, sans-serif;
+  background-image: url("../img/bg/email-pattern.png");
+}
+h1 {
+  font-size: 50px;
+  margin: 50px 0;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+.container {
+  width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.gallery li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 5px solid #757980;
+  float: left;
+  margin: 10px;
+  position: relative;
+}
+.gallery li,
+.gallery li a img,
+.gallery li span {
+  border-radius: 50%;
+}
+.gallery li span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(184, 184, 184, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: rgb(56, 56, 56);
+  text-shadow: 1px 1px 1px rgb(99, 99, 99);
+  opacity: 0;
+  transform: scale(0) rotate(0);
+  transition: 0.3s;
+}
+.gallery li a:hover span {
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(54, 54, 54, 0);
+  z-index: 9999;
+  transition: 1s;
+  text-align: center;
+  padding: 100px 0;
+}
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(54, 54, 54, 0.7);
+}
+.overlay img {
+  max-height: 100%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+.overlay:target img {
+  animation: slide 0.5s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 60px;
+  right: 47%;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 0 10px 0 10px;
+  border: 2px solid white;
+  opacity: 0;
+}
+.close:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 0 10px 0 10px;
+}
+.overlay:target .close {
+  animation: slideDown 0.7s 1s forwards;
+}
+/* .overlay .back {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 2px solid white;
+}
+.overlay .back:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 0 10px 0 10px;
+}
+.overlay .next{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 2px solid white;
+}
+.overlay .next:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 0 10px 0 10px;
+} */
+.overlay .back {
+  width: 53px;
+  height: 93px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  background-image: url("../img/rsz_left-arrow.png");
+  opacity: 0;
+  transform: scale(0);
+}
+.overlay:target .back,
+.overlay:target .next {
+  animation: slide 0.5s 0.5s forwards;
+}
+
+.overlay .next {
+  width: 57px;
+  height: 93px;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  background-image: url("../img/rsz_next.png");
+  opacity: 0;
+  transform: scale(0);
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

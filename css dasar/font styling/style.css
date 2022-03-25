@@ -1,0 +1,17 @@
+h1 {
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-variant: small-caps;
+}
+h2 {
+  font-family: monospace;
+}
+p {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.p2 {
+  font: italic normal bold 16px/40px monospace;
+  /* font-style; font-variant; font-weight; font-size; line-height; font-family ; */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .one {
+        filter: blur(2px);
+      }
+      .two {
+        filter: brightness(3);
+      }
+      .three {
+        filter: contrast(3);
+      }
+      .four {
+        filter: grayscale(0.7);
+      }
+      .five {
+        filter: hue-rotate(180deg);
+      }
+      .six {
+        filter: invert(2);
+      }
+      .seven {
+        filter: saturate(3);
+      }
+      .eight {
+        filter: sepia(1);
+      }
+      .nine {
+        filter: opacity(0.5);
+      }
+      .ten {
+        filter: drop-shadow(5px 5px 5px black);
+      }
+      .eleven {
+        filter: drop-shadow(10px 10px 10px black) grayscale(7);
+      }
+      .twelve {
+        filter: blur(5px);
+        transition: 0.7s;
+      }
+      .twelve:hover {
+        filter: blur(0);
+      }
+
+      /* filter: drop-shadow bisa buat text atau img dan text dalam format png */
+    </style>
+  </head>
+  <body>
+    <img class="one" src="img/steve.jpg" alt="stevejobs" />
+    <img class="two" src="img/steve.jpg" alt="stevejobs" />
+    <img class="three" src="img/steve.jpg" alt="stevejobs" />
+    <img class="four" src="img/steve.jpg" alt="stevejobs" />
+    <img class="five" src="img/steve.jpg" alt="stevejobs" />
+    <img class="six" src="img/steve.jpg" alt="stevejobs" />
+    <img class="seven" src="img/steve.jpg" alt="stevejobs" />
+    <img class="eight" src="img/steve.jpg" alt="stevejobs" />
+    <img class="nine" src="img/steve.jpg" alt="stevejobs" />
+    <img class="ten" src="img/steve.jpg" alt="stevejobs" />
+    <img class="eleven" src="img/steve.jpg" alt="stevejobs" />
+    <img class="twelve" src="img/steve.jpg" alt="stevejobs" />
+  </body>
+</html>

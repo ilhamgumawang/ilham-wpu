@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <!-- scale: memperbesar/memperkecil   
+     rotate: memutar
+     skew: miring/condong
+     translate: mengubah posisi -->
+    <style>
+      p {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .kotak1:hover {
+        transform: scale(2, 0.5);
+        /* (x,y) */
+      }
+
+      .kotak2:hover {
+        transform: rotate(90deg) rotateX(90deg) rotateY(45deg);
+        /* (x,y) */
+      }
+
+      .kotak3:hover {
+        transform: skewY(90deg);
+        /* (x,y) */
+      }
+
+      .kotak4:hover {
+        transform: scale(2) translate(50px, 100px);
+        /* (x,y) */
+      }
+
+      .kotak1 {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        margin: 50px auto;
+        transition: 0.7s;
+        text-align: center;
+      }
+      .kotak2 {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        margin: 50px auto;
+        transition: 0.7s;
+        text-align: center;
+      }
+      .kotak3 {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        margin: 50px auto;
+        transition: 0.3s;
+        text-align: center;
+      }
+      .kotak4 {
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        margin: 50px auto;
+        transition: 0.7s;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak1">kotak1</div>
+    <div class="kotak2">kotak2</div>
+    <div class="kotak3">kotak3</div>
+    <div class="kotak4">kotak4</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat laborum,
+      suscipit est nostrum magnam expedita sed minus distinctio mollitia, nisi
+      id reprehenderit non ipsam velit nam odio necessitatibus? Pariatur placeat
+      maxime, quidem modi totam eligendi autem ea nisi illum eaque aut facilis
+      cupiditate quisquam. Necessitatibus, laboriosam exercitationem? Dolor
+    </p>
+  </body>
+</html>

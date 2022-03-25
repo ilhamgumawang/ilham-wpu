@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    text-decoration: underline;
+    /* none: removed
+    underline: under element
+    overline: above element
+    line-through: crossing element
+    uppercase: big
+    lowercase: small
+    capitalize */
+}
+h2{
+    color: rgb(52, 235, 235);
+    text-align: right;
+    text-transform: lowercase;
+}
+p{
+    text-indent: 100px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+}

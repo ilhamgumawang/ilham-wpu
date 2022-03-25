@@ -1,0 +1,9 @@
+/* background-color
+background-image
+background-position
+background-repeat */
+
+body{
+    background-color:darkturquoise;
+    /* background: color url position repeat; */
+}
