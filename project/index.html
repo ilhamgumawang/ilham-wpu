@@ -222,19 +222,17 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        //Ketika submit
-        //Tampilkan tombol loading, hilangkan tombol submit
-
+        //When submit, show the loading button, remove the submit button
         btnLoading.classList.toggle("d-none");
         btnSubmit.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            //Tampilkan tombol kirim, hilangkan tombol loading
+            //Show the submit button, remove the loading button
             btnLoading.classList.toggle("d-none");
             btnSubmit.classList.toggle("d-none");
-            //Tampilkan alert
+            //Show alerts
             myAlert.classList.toggle("d-none");
-            //Reset formnya
+            //Reset Form
             form.reset();
             console.log("Success!", response);
           })
