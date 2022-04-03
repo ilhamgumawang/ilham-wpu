@@ -1,0 +1,37 @@
+.navbar {
+  background-color: rgb(0, 183, 255);
+}
+.navbar img {
+  width: 50px;
+  height: 50px;
+}
+
+#home img {
+  width: 200px;
+  height: 200px;
+}
+.jumbotron {
+  background-color: rgb(129, 188, 255);
+  padding-top: 100px;
+}
+#about {
+  background: #f3f4f5;
+}
+
+#projects {
+  background-color: rgb(129, 188, 255);
+}
+
+#contact {
+  background: #f3f4f5;
+}
+footer {
+  background-color: rgb(0, 183, 255);
+}
+footer a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 80px;
+}
